@@ -1,0 +1,96 @@
+/* Animation to slide my image from the right to the center of the screen */
+@keyframes move {
+	from {
+		left: 430px;
+	}
+	to {
+		left: 0;
+	}
+}
+@-webkit-keyframes move {
+	from {
+		left: 430px;
+	}
+	to {
+		left: 0;
+	}
+}
+@-moz-keyframes move {
+	from {
+		left: 430px;
+	}
+	to {
+		left: 0;
+	}
+}
+img {
+	animation: move 3s 1;
+	-webkit-animation: move 3s 1;
+	-moz-animation: move 3s 1;
+	/* Keep my image down in the screen */
+	margin: 220px 0 0 0;
+	border: 5px solid lightblue;
+	border-radius: 20px;
+	top: 0;
+	left: 0;
+	/* position relative is needed to keep my image centered on smaller screens */
+	position: relative;
+}
+body {
+	/* Keep the background picture stable even when on smaller screens */
+	background: url("http://i.imgur.com/FcuUSgV.jpg") no-repeat center center fixed;
+	background-size: cover;
+	text-align: center;
+	font-family: helvetica, sans-serif;
+	color: white;
+	position: relative;
+	/* Keep the text from appearing too low beneath my picture */
+	top: -160px;
+}
+h1 {
+	font-size: 70px;
+  text-decoration: underline;
+}
+ul {
+	font-size: 30px;
+	/* Keep the links centered */
+	padding: 5px 20px;
+}
+li {
+	display: inline;
+	/* Put space between the links */
+	padding: 0 20px;
+}
+/* Without this the link text will default to a dark color */
+a {
+	color: white;
+}
+p {
+	font-size: 30px;
+	margin-top: -30px;
+}
+/* For smaller screens, make everything smaller - 740px is where the links start to wrap */
+@media (max-width: 740px) {
+	body {
+		top: -200px;
+	}
+	h1 {
+		font-size: 45px;
+		/* Keep my name from appearing too low beneath my picture */
+		margin-top: 10px;
+	}
+	ul {
+		margin-top: -15px;
+		font-size: 25px;
+	}
+	li {
+		/* Space out the links */
+		padding: 5px;
+		/* Stack the links so they fit better */
+		display: block;
+	}
+	p {
+		margin-top: -20px;
+		font-size: 25px;
+	}
+}
