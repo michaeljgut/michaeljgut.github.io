@@ -38,10 +38,17 @@ img {
 }
 body {
 	/* Keep the background picture stable even when on smaller screens */
-/*	background: url("http://i.imgur.com/FcuUSgV.jpg") no-repeat center center fixed;
-*/	background-size: cover;
-  background-color: rgba(55,55,200,1);
-	text-align: center;
+	background:
+    /* top, transparent black, faked with gradient */
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    /* bottom, image */
+    url("../images/Portfolio_img.jpg") no-repeat center center fixed;
+	background-size: cover;
+/*  background-color: rgba(55,55,150,1);
+*/	text-align: center;
 	font-family: helvetica, sans-serif;
 	color: white;
 	position: relative;
