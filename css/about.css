@@ -22,6 +22,7 @@ p {
 .resume {
   font-size: 1.5em;
   text-align: center;
+  list-style: none;
 }
 @media(max-width: 740px) {
   h1 {
