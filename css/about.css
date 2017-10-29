@@ -1,38 +1,63 @@
 a {
   color: white;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-family: 'Open Sans', sans-serif;
+}
+.icons a {
+  text-decoration: none;
 }
 body {
   background: rgba(55,55,150,1);
+  background:
+    /* top, transparent black, to darken the image */
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* image */
+    url("../images/Cauliflower.jpg") no-repeat center center fixed;
+  background-size: cover;
   color: white;
   text-align: justify;
 }
 h1 {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  font-size: 3em;
-  margin-top: -1.5em;
+  font-size: 3rem;
+  margin-top: -3.5rem;
 }
 p {
   font-family: Signika, sans-serif;
-  font-size: 1.5em;
-  margin: 40px 0 0 0;
+  font-size: 1.5rem;
+  margin-top: 3rem;
 }
 .resume {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-align: center;
   list-style: none;
 }
-@media(max-width: 740px) {
+.linked-in {
+  width: 5rem;
+  border-radius: 1rem;
+}
+.github {
+  width: 5rem;
+  border-radius: 2.5rem;
+}
+.resume-img {
+  width: 5rem;
+  border-radius: 1rem;
+}
+
+@media(max-width: 35rem) {
   h1 {
-    font-size: 30px;
+    font-size: 2rem;
   }
   a {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   p {
-    font-size: 20px;
-    margin: 30px 0 0 0;
+    font-size: 1.25rem;
+    margin-top: 2rem;
   }
 }

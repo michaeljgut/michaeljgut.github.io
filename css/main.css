@@ -1,36 +1,6 @@
-/* Animation to slide my image from the right to the center of the screen */
-@keyframes move {
-	from {
-		left: 430px;
-	}
-	to {
-		left: 0;
-	}
-}
-@-webkit-keyframes move {
-	from {
-		left: 430px;
-	}
-	to {
-		left: 0;
-	}
-}
-@-moz-keyframes move {
-	from {
-		left: 430px;
-	}
-	to {
-		left: 0;
-	}
-}
 img {
-/*	animation: move 3s 1;
-	-webkit-animation: move 3s 1;
-	-moz-animation: move 3s 1;
-*/	/* Keep my image down in the screen */
-	margin: 200px 0 0 0;
-	border: 5px solid lightblue;
-	border-radius: 20px;
+	border: .5rem solid lightblue;
+	border-radius: 1rem;
 	top: 0;
 	left: 0;
 	/* position relative is needed to keep my image centered on smaller screens */
@@ -39,16 +9,15 @@ img {
 body {
 	/* Keep the background picture stable even when on smaller screens */
 	background:
-    /* top, transparent black, faked with gradient */
+    /* top, transparent black, to darken the image */
     linear-gradient(
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    /* bottom, image */
+    /* image */
     url("../images/Portfolio_img.jpg") no-repeat center center fixed;
 	background-size: cover;
-/*  background-color: rgba(55,55,150,1);
-*/	text-align: center;
+	text-align: center;
 	font-family: helvetica, sans-serif;
 	color: white;
 	position: relative;
@@ -56,54 +25,64 @@ body {
 	top: -160px;
 }
 h1 {
-  margin-top: 15px;
-	font-size: 70px;
+  margin-top: 1rem;
+	font-size: 4rem;
   text-decoration: underline;
   font-family: 'Open Sans', sans-serif;
 }
 ul {
-	font-size: 30px;
+	font-size: 2rem;
 	/* Keep the links centered */
-	padding: 5px 20px;
+	padding: .5rem 1rem;
 }
 li {
 	display: inline;
 	/* Put space between the links */
-	padding: 0 20px;
+	padding: 0 1rem;
 }
 /* Without this the link text will default to a dark color */
 a {
 	color: white;
 }
 p {
-	font-size: 30px;
-	margin-top: -30px;
+	font-size: 2rem;
+	margin-top: -2rem;
 }
 footer {
-  margin-top: -1em;
+  margin-top: -1rem;
 }
+.my-picture {
+  margin-top: 12.75rem;
+  content: url("../images/Profile_pic_large.jpg");
+}
+
 /* For smaller screens, make everything smaller - 740px is where the links start to wrap */
-@media (max-width: 740px) {
+@media (max-width: 35rem) {
 	body {
-		top: -200px;
+		top: -13rem;
 	}
 	h1 {
-		font-size: 45px;
+		font-size: 2.5rem;
 		/* Keep my name from appearing too low beneath my picture */
-		margin-top: 10px;
+		margin-top: .75rem;
 	}
   ul {
-    margin-top: -15px;
-    font-size: 25px;
+    margin-top: -1rem;
+    font-size: 1.5rem;
   }
 	li {
 		/* Space out the links */
-		padding: 5px;
+		padding: .5rem;
 		/* Stack the links so they fit better */
 		display: block;
 	}
 	p {
-		margin-top: -20px;
-		font-size: 25px;
+		margin-top: -1.5rem;
+		font-size: 1.5rem;
 	}
+  .my-picture {
+    margin-top: 15rem;
+    content: url("../images/Profile_pic_small.jpg");
+  }
+
 }
