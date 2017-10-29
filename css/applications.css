@@ -27,6 +27,9 @@ h1 {
   float: right;
 }
 
+.nytimes-app, .medi-flash-app {
+  width: 30rem;
+}
 @media(max-width: 35rem) {
   h1 {
     font-size: 2rem;
