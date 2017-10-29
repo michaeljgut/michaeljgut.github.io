@@ -54,6 +54,7 @@ p {
 
 @media(max-width: 35rem) {
   h1 {
+    margin-top: -1rem;
     font-size: 2rem;
   }
   a {
@@ -61,6 +62,6 @@ p {
   }
   p {
     font-size: 1.25rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
