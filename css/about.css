@@ -6,6 +6,9 @@ a {
 .icons a {
   text-decoration: none;
 }
+.nav {
+  margin-top: -.2rem;
+}
 body {
   background: rgba(55,55,150,1);
   background:
@@ -24,7 +27,7 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   font-size: 3rem;
-  margin-top: -3.5rem;
+  margin-top: -5rem;
 }
 p {
   font-family: Signika, sans-serif;
