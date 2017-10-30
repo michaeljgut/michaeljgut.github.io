@@ -1,11 +1,13 @@
 a {
   color: white;
 }
-.nav {
+
+nav {
   margin-top: -8rem;
   text-align: left;
   font-size: 1.25rem;
 }
+
 .icons a {
   text-decoration: none;
 }
@@ -40,41 +42,50 @@ p {
   font-size: 2rem;
 }
 
-.resume {
-  font-size: 1.5rem;
-  text-align: center;
-  list-style: none;
-}
 .linked-in {
   width: 5rem;
   border-radius: 1rem;
 }
+
 .github {
   width: 5rem;
   border-radius: 2.5rem;
 }
+
 .resume-img {
   width: 5rem;
   border-radius: 1rem;
 }
 
-@media (max-width: 35rem) {
+.links {
+  font-size: 1.5rem;
+  text-align: center;
+  list-style: none;
+  margin-top: -1rem;
+}
 
+.links a {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 35rem) {
   h1 {
     font-size: 2rem;
-    margin-top: -.3rem;
+    margin-top: 1rem;
   }
 
   h2 {
     font-size: 1.75rem;
-    margin-top: -1rem;
+    margin-top: 1rem;
   }
 
   p {
     font-size: 1.5rem;
   }
-  .nav {
-    margin-top: -4rem;
+
+  nav {
+    margin-top: -5rem;
   }
 }
 

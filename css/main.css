@@ -6,6 +6,7 @@ img {
 	/* position relative is needed to keep my image centered on smaller screens */
 	position: relative;
 }
+
 body {
 	/* Keep the background picture stable even when on smaller screens */
 	background:
@@ -24,32 +25,39 @@ body {
 	/* Keep the text from appearing too low beneath my picture */
 	top: -160px;
 }
+
 h1 {
   margin-top: 1rem;
 	font-size: 4rem;
   font-family: 'Open Sans', sans-serif;
 }
+
 ul {
 	font-size: 2rem;
 	/* Keep the links centered */
 	padding: .5rem 1rem;
 }
+
 li {
 	display: inline;
 	/* Put space between the links */
 	padding: 0 1rem;
 }
+
 /* Without this the link text will default to a dark color */
 a {
 	color: white;
 }
+
 p {
 	font-size: 2rem;
 	margin-top: -2rem;
 }
-footer {
+
+nav {
   margin-top: -1rem;
 }
+
 .my-picture {
   margin-top: 12.75rem;
   content: url("../images/Profile_pic_large.jpg");
@@ -60,28 +68,32 @@ footer {
 	body {
 		top: -13rem;
 	}
+
 	h1 {
 		font-size: 2.5rem;
 		/* Keep my name from appearing too low beneath my picture */
 		margin-top: .75rem;
 	}
+
   ul {
     margin-top: -1rem;
     font-size: 1.5rem;
   }
+
 	li {
 		/* Space out the links */
 		padding: .5rem;
 		/* Stack the links so they fit better */
 		display: block;
 	}
+
 	p {
 		margin-top: -1.5rem;
 		font-size: 1.5rem;
 	}
+
   .my-picture {
     margin-top: 15rem;
     content: url("../images/Profile_pic_small.jpg");
   }
-
 }
