@@ -1,13 +1,10 @@
-img {
-	border: .5rem solid lightblue;
-	border-radius: 1rem;
-	top: 0;
-	left: 0;
-	/* position relative is needed to keep my image centered on smaller screens */
-	position: relative;
+body {
+  text-align: center;
+  font-family: helvetica, sans-serif;
+  color: white;
 }
 
-body {
+#home-page {
 	/* Keep the background picture stable even when on smaller screens */
 	background:
     /* top, transparent black, to darken the image */
@@ -18,16 +15,23 @@ body {
     /* image */
     url("../images/Portfolio_img.jpg") no-repeat center center fixed;
 	background-size: cover;
-	text-align: center;
-	font-family: helvetica, sans-serif;
-	color: white;
 	position: relative;
-	/* Keep the text from appearing too low beneath my picture */
-	top: -160px;
+  height: 100vh;
+}
+
+.home-h1 {
+  margin-top: 5.5rem;
+}
+
+.about-h1 {
+  margin-top: -4.5rem;
+}
+
+.applications-h1 {
+  margin-top: -4.5rem;
 }
 
 h1 {
-  margin-top: 1rem;
 	font-size: 4rem;
   font-family: 'Open Sans', sans-serif;
 }
@@ -49,7 +53,7 @@ a {
 	color: white;
 }
 
-p {
+.home-p {
 	font-size: 2rem;
 	margin-top: -2rem;
 }
@@ -59,13 +63,170 @@ nav {
 }
 
 .my-picture {
-  margin-top: 12.75rem;
+  border: .5rem solid lightblue;
+  border-radius: 1rem;
+  left: 0;
+  /* position relative is needed to keep my image centered on smaller screens */
+  position: relative;
+  top: 3.75rem;
   content: url("../images/Profile_pic_large.jpg");
 }
 
-/* For smaller screens, make everything smaller - 740px is where the links start to wrap */
+.nav {
+  font-size: 1.25rem;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+
+#about-page {
+  background: rgba(55,55,150,1);
+  background:
+    /* top, transparent black, to darken the image */
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* image */
+    url("../images/Cauliflower.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  margin: 1rem 0;
+}
+
+.about-text {
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.icons {
+  font-size: 1.5rem;
+  text-align: center;
+  list-style: none;
+}
+
+.linked-in {
+  width: 7rem;
+  border-radius: 1rem;
+}
+
+.github {
+  width: 7rem;
+  border-radius: 3.5rem;
+}
+
+.resume-img {
+  width: 7rem;
+  border-radius: 1.5rem;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+#applications-page {
+  background: rgba(55,55,150,1);
+  background-size: cover;
+  color: white;
+  height: 100vh;
+}
+
+.medi-flash-header {
+  margin-left: 7rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.nytimes-header {
+  margin-left: 7rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.project-1-image,
+.project-2-image {
+  float: left;
+  width: 10rem;
+  height: 10rem;
+}
+
+.applications-github {
+  text-decoration: none;
+}
+
+.applications-github-image {
+  width: 2rem;
+  border-radius: 2.5rem;
+}
+
+.nytimes-app,
+.medi-flash-app {
+  width: 29rem;
+}
+
+.projects {
+  height: 5rem;
+  width: 100%;
+  text-align: justify;
+}
+
+.project-images {
+  height: 13rem;
+}
+
+.project-2-text,
+.project-1-text {
+  margin-top: 10rem;
+  width: 30rem;
+  height: 10rem;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.project-1-span {
+  text-align: justify;
+}
+
+.project-1-image {
+  margin-top: -17.5rem;
+  margin-left: 7rem;
+}
+
+.project-2-image {
+  margin-top: -17.6rem;
+  margin-left: 43rem;
+}
+
+.project-1-image:hover ~.project-1-text {
+  display: inline;
+}
+
+.nytimes-header:hover ~.project-1-text {
+  display: inline;
+}
+
+.project-2-image:hover ~.project-2-text {
+  display: inline;
+}
+
+.medi-flash-header:hover ~.project-2-text {
+  display: inline;
+}
+
+@media (max-width: 50rem) {
+
+  .about-h1 {
+    margin-top: .1rem;
+  }
+
+  .about-text {
+    margin-top: -1.5rem;
+  }
+}
+
+/* For smaller screens, make everything smaller - 35rem is where the links start to wrap */
 @media (max-width: 35rem) {
-	body {
+	.home-page {
 		top: -13rem;
 	}
 

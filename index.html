@@ -5,24 +5,107 @@
     <!-- My professtional Website for web development -->
     <!-- Use google font Open Sans for my name -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet">
     <title>Michael Gutleber's Profile Website</title>
     <meta name="description" content="Michael Gutleber's home page with links to his about, applications
-      and contact pages">
+      and contact sections">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <!-- My profile picture -->
-    <img class="my-picture" />
-    <h1>Michael Gutleber</h1>
-    <p>Hi, I'm a NYC based web developer!</p>
-    <p>Welcome to my site!</p>
+    <div id="home-page">
+      <!-- My profile picture -->
+      <img class="my-picture" />
+      <h1 class="home-h1">Michael Gutleber</h1>
+      <p class="home-p">Hi, I'm a NYC based web developer!</p>
+      <p class="home-p">Welcome to my site!</p>
+      <nav>
+        <ul>
+          <li><a href="#about-page">About</a></li>
+          <li><a href="#applications-page">Applications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="about-page">
+      <nav class="nav">
+        <a href="#home-page">Home</a>
+        <br />
+        <a href="#applications-page">Applications</a>
+        <br />
+        <a href="contact.html">Contact</a>
+      </nav>
+      <h1 class="about-h1">Michael Gutleber</h1>
+      <p class="about-text">I am a lifelong New Yorker who enjoys learning new computer technologies and applying them to solve
+        people’s needs. I am passionate about programming and enjoy completing challenging projects. My
+        creativity allows me to come up with efficient solutions to problems and my attention to detail allows
+        me to write computer code accurately. I work well with others and am considerate of their needs and
+        abilities in forming an effective team. My 15 years of computer programming experience, my computer
+        science BA and my web developer immersive certification give me a solid foundation from which to grow.
+      </p>
+      <br />
+      <footer class="icons">
+        <a href="https://drive.google.com/file/d/0B24HDSb--6XOdXlhWnFIYjM4V00/view?usp=sharing">
+          <img src="images/resume.jpeg" class="resume-img" alt="Resume image"/>
+        </a>
+        <a href="https://www.linkedin.com/in/michael-gutleber-18867911">
+          <img src="images/linkedin.png" class="linked-in" alt="LinkedIn image"/>
+        </a>
+        <a href="https://github.com/michaeljgut">
+          <img src="images/github.png" class="github" alt="Github image"/>
+        </a>
+      </footer>
+    </div>
+    <div id="applications-page">
+      <nav class="nav">
+        <a href="#home-page">Home</a>
+        <br />
+        <a href="#about-page">About</a>
+        <br />
+        <a href="contact.html">Contact</a>
+      </nav>
+      <h1 class="applications-h1">Applications</h1>
+      <p class="project-images">
+      </p>
+      <p class="projects">
+        <a href="http://fast-badlands-99781.herokuapp.com/" class="nytimes-header">The New York Times Article Search App</a>
+        <a href="https://github.com/michaeljgut/project4" title="See Code" class="applications-github">
+          <img src="images/github.png" class="applications-github-image"/>
+        </a>
+        <a href="https://infinite-eyrie-11286.herokuapp.com/" class="medi-flash-header">The Medi-Flash Application</a>
+        <a href="https://github.com/Dichora2/Medi-flash" class="applications-github" title="See Code">
+          <img src="images/github.png" class="applications-github-image" />
+        </a>
+        <a class="project-1-image" href="http://fast-badlands-99781.herokuapp.com/">
+          <img src="images/nytimes_app.png" class="nytimes-app">
+        </a>
+        <a class="project-2-image" href="https://infinite-eyrie-11286.herokuapp.com/">
+          <img src="images/medi_flash.png" class="medi-flash-app">
+        </a>
+        <br />
+        <span class="project-1-text">
+          <br />
+          <span class="project-1-span">
+          The New York Times Article Search Application
+           will allow a user to search the New York Times article database by keyword and will
+          retrieve the most relevant 3-10 articles. It also allows for the retrieval of 3-10 recent articles
+          from the New York Times based on their section. The results are links to the New York Times web site.
+          These URLs may be saved. A user can also save up to four topics, which will
+          then be displayed along with the query results whenever they log in. This was developed using React and
+          Rails.
+          </span>
+        </span>
+        <span class="project-2-text">
+          <br />
+          The Medi-Flash Application
+          allows a user to create flashcards grouped by subject. The user has the option of typing in the definition of a flashcard term
+          or retrieving a definition from the Merriam Webster Medical Dictionary and editing that. Cards can be placed into 2
+          categories, those that need more studying, the default, and those that have been memorized. This was
+          developed by a team of 3 developers using React and Express.
+        </span>
+      </p>
+      <p class="project-2">
+      </p>
+    </div>
   </body>
-  <nav>
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="applications.html">Applications</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 </html>
