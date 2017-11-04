@@ -24,15 +24,17 @@ body {
   margin-top: 5.5rem;
 }
 
-.about-h1 {
-  margin-top: -4.5rem;
+.about-h2 {
+  font-size: 3rem;
+  margin-top: -1.5rem;
 }
 
 .applications-h1 {
   margin-top: -4.5rem;
 }
 
-h1 {
+h1,
+h2 {
 	font-size: 4rem;
   font-family: 'Open Sans', sans-serif;
 }
@@ -54,7 +56,8 @@ a {
 	color: white;
 }
 
-.home-p {
+.home-p1,
+.home-p2 {
 	font-size: 2rem;
 	margin-top: -2rem;
 }
@@ -242,8 +245,8 @@ nav {
 
 @media (max-width: 50rem) {
 
-  .about-h1 {
-    margin-top: .1rem;
+  .about-h2 {
+    margin-top: -2rem;
   }
 
   .about-text {
@@ -302,7 +305,7 @@ nav {
 
   .applications-github-image2 {
     margin-top: -7.5rem;
-    margin-left: 33rem;
+    margin-left: 37.7rem;
     float: left;
   }
 
@@ -313,7 +316,7 @@ nav {
 	.home-h1 {
 		font-size: 2.5rem;
 		/* Keep my name from appearing too low beneath my picture */
-		margin-top: 5rem;
+		margin-top: 4rem;
 	}
 
   ul {
@@ -334,7 +337,7 @@ nav {
 	}
 
   .my-picture {
-    margin-top: -.7rem;
+    margin-top: -2rem;
     content: url("../images/Profile_pic_small.jpg");
   }
 
@@ -354,16 +357,21 @@ nav {
     width: 100vw;
   }
 
-  .home-p {
-    font-size: 1.5rem;
-    margin-top: -1rem;
+  .home-p1 {
+    font-size: 1.4rem;
+    margin-top: -1.25rem;
+  }
+
+  .home-p2 {
+    font-size: 1.4rem;
+    margin-top: -.5rem;
   }
 
   .home-nav {
     margin-top: -1rem;
   }
 
-  .about-h1 {
+  .about-h2 {
     margin-top: .5rem;
     font-size: 2rem;
   }
@@ -391,6 +399,62 @@ nav {
   .resume-img {
     width: 4rem;
     border-radius: 1.5rem;
+  }
+
+  .applications-h1 {
+    margin-top: -3rem;
+    font-size: 2rem;
+  }
+
+  .project-1-image {
+    margin-left: 4rem;
+    margin-top: -20.5rem;
+  }
+
+  .nytimes-header {
+    margin-top: -2rem;
+  }
+
+  .applications-github-image1 {
+    margin-top: -2.5rem;
+    display: inline;
+  }
+
+  .project-1-text {
+    display: none;
+    margin-top: -5rem;
+  }
+
+  .project-2-image {
+    margin-left: 4rem;
+    margin-top: -9.5rem;
+  }
+
+  .medi-flash-header {
+    margin-left: 4rem;
+    margin-top: 9rem;
+  }
+
+  .applications-github-image2 {
+    margin-top: 8.5rem;
+    margin-left: .2rem;
+    display: inline;
+  }
+
+  .project-2-text {
+    display: none;
+  }
+
+  .project-1-image:hover ~.project-1-text,
+  .nytimes-header:hover ~.project-1-text,
+  .project-2-image:hover ~.project-2-text,
+  .medi-flash-header:hover ~.project-2-text {
+    display: none;
+  }
+
+  .contact-h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
   }
 
 }
