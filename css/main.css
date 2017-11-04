@@ -1,13 +1,10 @@
-img {
-	border: .5rem solid lightblue;
-	border-radius: 1rem;
-	top: 0;
-	left: 0;
-	/* position relative is needed to keep my image centered on smaller screens */
-	position: relative;
+body {
+  text-align: center;
+  font-family: helvetica, sans-serif;
+  color: white;
 }
 
-body {
+#home-page {
 	/* Keep the background picture stable even when on smaller screens */
 	background:
     /* top, transparent black, to darken the image */
@@ -18,16 +15,26 @@ body {
     /* image */
     url("../images/Portfolio_img.jpg") no-repeat center center fixed;
 	background-size: cover;
-	text-align: center;
-	font-family: helvetica, sans-serif;
-	color: white;
 	position: relative;
-	/* Keep the text from appearing too low beneath my picture */
-	top: -160px;
+  height: 100vh;
+  width: 100vw;
 }
 
-h1 {
-  margin-top: 1rem;
+.home-h1 {
+  margin-top: 5.5rem;
+}
+
+.about-h2 {
+  font-size: 3rem;
+  margin-top: -1.5rem;
+}
+
+.applications-h1 {
+  margin-top: -4.5rem;
+}
+
+h1,
+h2 {
 	font-size: 4rem;
   font-family: 'Open Sans', sans-serif;
 }
@@ -49,7 +56,8 @@ a {
 	color: white;
 }
 
-p {
+.home-p1,
+.home-p2 {
 	font-size: 2rem;
 	margin-top: -2rem;
 }
@@ -59,20 +67,256 @@ nav {
 }
 
 .my-picture {
-  margin-top: 12.75rem;
+  border: .5rem solid lightblue;
+  border-radius: 1rem;
+  left: 0;
+  /* position relative is needed to keep my image centered on smaller screens */
+  position: relative;
+  top: 3.75rem;
   content: url("../images/Profile_pic_large.jpg");
 }
 
-/* For smaller screens, make everything smaller - 740px is where the links start to wrap */
-@media (max-width: 35rem) {
-	body {
-		top: -13rem;
-	}
+.nav {
+  font-size: 1.25rem;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
 
-	h1 {
+#about-page {
+  background: rgba(55,55,150,1);
+  background:
+    /* top, transparent black, to darken the image */
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* image */
+    url("../images/Cauliflower.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  margin: 1rem 0;
+}
+
+.about-text {
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.icons {
+  font-size: 1.5rem;
+  text-align: center;
+  list-style: none;
+}
+
+.linked-in {
+  width: 7rem;
+  border-radius: 1rem;
+}
+
+.github {
+  width: 7rem;
+  border-radius: 3.5rem;
+}
+
+.resume-img {
+  width: 7rem;
+  border-radius: 1.5rem;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+#applications-page {
+  background: rgba(55,55,150,1);
+  background-size: cover;
+  color: white;
+  height: 100vh;
+}
+
+.nytimes-header {
+  margin-left: 7rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.medi-flash-header {
+  margin-left: 7rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.project-1-image,
+.project-2-image {
+  float: left;
+}
+
+.applications-github {
+  text-decoration: none;
+}
+
+.applications-github-image1,
+.applications-github-image2 {
+  width: 2rem;
+  border-radius: 2.5rem;
+}
+
+.nytimes-app,
+.medi-flash-app {
+  width: 29rem;
+}
+
+.projects {
+  height: 5rem;
+  width: 100%;
+  text-align: justify;
+}
+
+.project-images {
+  height: 13rem;
+}
+
+.project-2-text,
+.project-1-text {
+  margin-top: 10rem;
+  height: 10rem;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.project-1-image {
+  margin-top: -17.5rem;
+  margin-left: 7rem;
+}
+
+.project-2-image {
+  margin-top: -17.6rem;
+  margin-left: 43rem;
+}
+
+.project-1-image:hover ~.project-1-text {
+  display: inline;
+}
+
+.nytimes-header:hover ~.project-1-text {
+  display: inline;
+}
+
+.project-2-image:hover ~.project-2-text {
+  display: inline;
+}
+
+.medi-flash-header:hover ~.project-2-text {
+  display: inline;
+}
+
+#contact-page {
+  background: rgba(55,55,150,1);
+  background:
+    /* top, transparent black, to darken the image */
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* image */
+    url("../images/Mailbox.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+}
+
+.links {
+  font-size: 1.5rem;
+  text-align: center;
+  list-style: none;
+  margin-top: -1rem;
+}
+
+.links a {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.contact-h2 {
+  font-size: 3rem;
+  margin-top: -1.5rem;
+}
+
+@media (max-width: 50rem) {
+
+  .about-h2 {
+    margin-top: -2rem;
+  }
+
+  .about-text {
+    margin-top: -1.5rem;
+  }
+
+  .icons {
+    margin-top: -2.5rem;
+  }
+
+  .nytimes-app,
+  .medi-flash-app {
+    width: 15rem;
+  }
+
+  .project-1-image {
+    margin-top: -15rem;
+    margin-left: 4rem;
+  }
+
+  .project-2-image {
+    margin-top: -15rem;
+    margin-left: 23rem;
+  }
+
+  .nytimes-header {
+    margin-top: -7rem;
+    margin-left: 4rem;
+    text-align: left;
+    font-size: .8rem;
+    float: left;
+  }
+
+  .medi-flash-header {
+    margin-top: -7rem;
+    margin-left: 23rem;
+    text-align: left;
+    font-size: .8rem;
+    float: left;
+  }
+
+  .project-2-text,
+  .project-1-text {
+    margin-top: -7rem;
+    float: left;
+    height: 10rem;
+    font-size: 1rem;
+    display: none;
+  }
+
+  .applications-github-image1 {
+    margin-top: -7.5rem;
+    margin-left: 18.5rem;
+    float: left;
+  }
+
+  .applications-github-image2 {
+    margin-top: -7.5rem;
+    margin-left: 37.7rem;
+    float: left;
+  }
+
+}
+
+/* For smaller screens, make everything smaller - 35rem is where the links start to wrap */
+@media (max-width: 35rem) {
+	.home-h1 {
 		font-size: 2.5rem;
 		/* Keep my name from appearing too low beneath my picture */
-		margin-top: .75rem;
+		margin-top: 4rem;
 	}
 
   ul {
@@ -93,7 +337,124 @@ nav {
 	}
 
   .my-picture {
-    margin-top: 15rem;
+    margin-top: -2rem;
     content: url("../images/Profile_pic_small.jpg");
   }
+
+  #home-page {
+    /* Keep the background picture stable even when on smaller screens */
+    background:
+      /* top, transparent black, to darken the image */
+      linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      /* image */
+      url("../images/Portfolio_img.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .home-p1 {
+    font-size: 1.4rem;
+    margin-top: -1.25rem;
+  }
+
+  .home-p2 {
+    font-size: 1.4rem;
+    margin-top: -.5rem;
+  }
+
+  .home-nav {
+    margin-top: -1rem;
+  }
+
+  .about-h2 {
+    margin-top: .5rem;
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .icons {
+    margin-top: .1rem;
+    font-size: 1rem;
+  }
+
+  .linked-in {
+    width: 4rem;
+    border-radius: 1rem;
+  }
+
+  .github {
+    width: 4rem;
+    border-radius: 3.5rem;
+  }
+
+  .resume-img {
+    width: 4rem;
+    border-radius: 1.5rem;
+  }
+
+  .applications-h1 {
+    margin-top: -3rem;
+    font-size: 2rem;
+  }
+
+  .project-1-image {
+    margin-left: 4rem;
+    margin-top: -20.5rem;
+  }
+
+  .nytimes-header {
+    margin-top: -2rem;
+  }
+
+  .applications-github-image1 {
+    margin-top: -2.5rem;
+    display: inline;
+  }
+
+  .project-1-text {
+    display: none;
+    margin-top: -5rem;
+  }
+
+  .project-2-image {
+    margin-left: 4rem;
+    margin-top: -9.5rem;
+  }
+
+  .medi-flash-header {
+    margin-left: 4rem;
+    margin-top: 9rem;
+  }
+
+  .applications-github-image2 {
+    margin-top: 8.5rem;
+    margin-left: .2rem;
+    display: inline;
+  }
+
+  .project-2-text {
+    display: none;
+  }
+
+  .project-1-image:hover ~.project-1-text,
+  .nytimes-header:hover ~.project-1-text,
+  .project-2-image:hover ~.project-2-text,
+  .medi-flash-header:hover ~.project-2-text {
+    display: none;
+  }
+
+  .contact-h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
 }
