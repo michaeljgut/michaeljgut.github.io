@@ -6,6 +6,9 @@ body {
 
 #home-page {
 	/* Keep the background picture stable even when on smaller screens */
+  /* I got the following from this web site:
+     https://stackoverflow.com/questions/23208200/how-to-darken-a-background-using-css
+  */
 	background:
     /* top, transparent black, to darken the image */
     linear-gradient(
@@ -83,7 +86,6 @@ nav {
 }
 
 #about-page {
-  background: rgba(55,55,150,1);
   background:
     /* top, transparent black, to darken the image */
     linear-gradient(
@@ -135,12 +137,7 @@ nav {
   height: 100vh;
 }
 
-.nytimes-header {
-  margin-left: 7rem;
-  text-align: left;
-  font-size: 1.5rem;
-}
-
+.nytimes-header,
 .medi-flash-header {
   margin-left: 7rem;
   text-align: left;
@@ -195,24 +192,14 @@ nav {
   margin-left: 43rem;
 }
 
-.project-1-image:hover ~.project-1-text {
-  display: inline;
-}
-
-.nytimes-header:hover ~.project-1-text {
-  display: inline;
-}
-
-.project-2-image:hover ~.project-2-text {
-  display: inline;
-}
-
+.project-1-image:hover ~.project-1-text,
+.nytimes-header:hover ~.project-1-text,
+.project-2-image:hover ~.project-2-text,
 .medi-flash-header:hover ~.project-2-text {
   display: inline;
 }
 
 #contact-page {
-  background: rgba(55,55,150,1);
   background:
     /* top, transparent black, to darken the image */
     linear-gradient(
@@ -339,22 +326,6 @@ nav {
   .my-picture {
     margin-top: -2rem;
     content: url("../images/Profile_pic_small.jpg");
-  }
-
-  #home-page {
-    /* Keep the background picture stable even when on smaller screens */
-    background:
-      /* top, transparent black, to darken the image */
-      linear-gradient(
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2)
-      ),
-      /* image */
-      url("../images/Portfolio_img.jpg") no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
   }
 
   .home-p1 {
