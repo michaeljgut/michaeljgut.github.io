@@ -173,16 +173,20 @@ a {
 }
 
 .project-images {
-  height: 13rem;
+  height: 12rem;
 }
 
-.project-2-text,
 .project-1-text {
   margin-top: 10rem;
   height: 10rem;
-  font-size: 1.5rem;
-  display: none;
+  font-size: 1.2rem;
 }
+
+.project-2-text {
+  height: 10rem;
+  font-size: 1.2rem;
+}
+
 
 .project-1-image {
   margin-top: -17.5rem;
@@ -279,13 +283,18 @@ a {
     float: left;
   }
 
-  .project-2-text,
   .project-1-text {
-    margin-top: -7rem;
     float: left;
+    margin-top: -7rem;
     height: 10rem;
-    font-size: 1rem;
-    display: none;
+    font-size: 1.2rem;
+  }
+
+  .project-2-text {
+    float: left;
+    margin-top: 1rem;
+    height: 10rem;
+    font-size: 1.2rem;
   }
 
   .applications-github-image1 {
@@ -376,6 +385,10 @@ a {
     border-radius: 1.5rem;
   }
 
+  #applications-page {
+    height: 52rem;
+  }
+
   .applications-h1 {
     margin-top: -3rem;
     font-size: 2rem;
@@ -383,7 +396,7 @@ a {
 
   .project-1-image {
     margin-left: 4rem;
-    margin-top: -20.5rem;
+    margin-top: -34.5rem;
   }
 
   .nytimes-header {
@@ -396,28 +409,29 @@ a {
   }
 
   .project-1-text {
-    display: none;
-    margin-top: -5rem;
+    margin-top: -25.5rem;
+    font-size: 1rem;
   }
 
   .project-2-image {
     margin-left: 4rem;
-    margin-top: -9.5rem;
+    margin-top: -10.5rem;
   }
 
   .medi-flash-header {
     margin-left: 4rem;
-    margin-top: 9rem;
+    margin-top: 22rem;
   }
 
   .applications-github-image2 {
-    margin-top: 8.5rem;
+    margin-top: 22.5rem;
     margin-left: .2rem;
     display: inline;
   }
 
   .project-2-text {
-    display: none;
+    margin-top: -1.5rem;
+    font-size: 1rem;
   }
 
   .project-1-image:hover ~.project-1-text,
