@@ -98,6 +98,7 @@ a {
   color: white;
   height: 100vh;
   margin: 1rem 0;
+  padding: 0 .5rem;
 }
 
 .about-text {
@@ -135,6 +136,7 @@ a {
   background-size: cover;
   color: white;
   height: 100vh;
+  padding: 0 .5rem;
 }
 
 .nytimes-header,
@@ -211,6 +213,7 @@ a {
   background-size: cover;
   color: white;
   height: 100vh;
+  padding: 0 .5rem;
 }
 
 .links {
