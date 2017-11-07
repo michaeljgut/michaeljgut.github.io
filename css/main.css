@@ -86,19 +86,11 @@ a {
 }
 
 #about-page {
-  background:
-    /* top, transparent black, to darken the image */
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    /* image */
-    url("../images/Cauliflower.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background: rgba(55,55,150,1);
   color: white;
   height: 100vh;
   margin: 1rem 0;
-  padding: 0 .5rem;
+  padding: 0 1rem;
 }
 
 .about-text {
@@ -133,10 +125,9 @@ a {
 
 #applications-page {
   background: rgba(55,55,150,1);
-  background-size: cover;
   color: white;
   height: 100vh;
-  padding: 0 .5rem;
+  padding: 0 1rem;
 }
 
 .nytimes-header,
@@ -173,7 +164,7 @@ a {
 }
 
 .project-images {
-  height: 12rem;
+  height: 13rem;
 }
 
 .project-1-text {
