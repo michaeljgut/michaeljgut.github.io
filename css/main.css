@@ -2,6 +2,7 @@ body {
   text-align: center;
   font-family: helvetica, sans-serif;
   color: white;
+  overflow: hidden;
 }
 
 h1,
@@ -298,6 +299,10 @@ a {
 
 /* This is for smartphones */
 @media (max-width: 35rem) {
+  body {
+    overflow: visible;
+  }
+
 	.home-h1 {
 		font-size: 2.5rem;
 		/* Keep my name from appearing too low beneath my picture */
@@ -371,7 +376,7 @@ a {
   }
 
   #applications-page {
-    height: 52rem;
+    height: 53.5rem;
   }
 
   .applications-h1 {
@@ -385,7 +390,7 @@ a {
   }
 
   .nytimes-header {
-    margin-top: -2rem;
+    margin-top: -2.5rem;
   }
 
   .applications-github-image1 {
@@ -394,7 +399,7 @@ a {
   }
 
   .project-1-text {
-    margin-top: -25.5rem;
+    margin-top: -26rem;
     font-size: 1rem;
   }
 
@@ -409,7 +414,7 @@ a {
   }
 
   .applications-github-image2 {
-    margin-top: 22.5rem;
+    margin-top: 22rem;
     margin-left: .2rem;
     display: inline;
   }
