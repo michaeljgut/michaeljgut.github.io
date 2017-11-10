@@ -136,9 +136,23 @@ a {
 
 .nytimes-header,
 .medi-flash-header {
-  margin-left: 7rem;
+  margin-left: 5rem;
   text-align: left;
   font-size: 1.5rem;
+}
+
+.medi-flash-header {
+  margin-left: 8rem;
+}
+
+.project-1-p {
+  margin-left: -44rem;
+  margin-top: -5rem;
+}
+
+.project-2-p {
+  margin-left: -5rem;
+  margin-top: -3rem;
 }
 
 .project-1-image,
@@ -156,9 +170,12 @@ a {
   border-radius: 2.5rem;
 }
 
-.nytimes-app,
+.nytimes-app {
+  width: 28%;
+}
+
 .medi-flash-app {
-  width: 29rem;
+  width: 82%;
 }
 
 .projects {
@@ -171,12 +188,16 @@ a {
   height: 13rem;
 }
 
-.project-1-text {
-  margin-top: 10rem;
-  height: 10rem;
-  font-size: 1.2rem;
+.project-text {
+  margin-top: 2rem;
+  text-align: justify;
 }
 
+.project-1-text {
+  margin-top: 12rem;
+}
+
+.project-1-text,
 .project-2-text {
   height: 10rem;
   font-size: 1.2rem;
@@ -249,24 +270,37 @@ a {
     height: 100vh;
   }
 
-  .nytimes-app,
+  .project-1-p {
+    margin-left: -21rem;
+    margin-top: -8rem;
+  }
+
+  .project-2-p {
+    margin-left: -2rem;
+    margin-top: -3rem;
+  }
+
+  .nytimes-app {
+    width: 28%;
+  }
+
   .medi-flash-app {
-    width: 15rem;
+    width: 80%;
   }
 
   .project-1-image {
-    margin-top: -15rem;
-    margin-left: 4rem;
+    margin-top: -14rem;
+    margin-left: 1rem;
   }
 
   .project-2-image {
-    margin-top: -15rem;
-    margin-left: 23rem;
+    margin-top: -14rem;
+    margin-left: 22rem;
   }
 
   .nytimes-header {
     margin-top: -7rem;
-    margin-left: 4rem;
+    margin-left: 2.5rem;
     text-align: left;
     font-size: .8rem;
     float: left;
@@ -274,10 +308,14 @@ a {
 
   .medi-flash-header {
     margin-top: -7rem;
-    margin-left: 23rem;
+    margin-left: 22.5rem;
     text-align: left;
     font-size: .8rem;
     float: left;
+  }
+
+  .project-text {
+    margin-top: 4rem;
   }
 
   .project-1-text {
@@ -296,7 +334,7 @@ a {
 
   .applications-github-image1 {
     margin-top: -7.5rem;
-    margin-left: 18.5rem;
+    margin-left: 17.5rem;
     float: left;
   }
 
@@ -399,6 +437,24 @@ a {
     font-size: 2rem;
   }
 
+  .nytimes-app {
+    width: 78%;
+  }
+
+  .medi-flash-app {
+    width: 78%;
+  }
+
+  .project-1-p {
+    margin-left: -4rem;
+    margin-top: -8rem;
+  }
+
+  .project-2-p {
+    margin-left: -4rem;
+    margin-top: -2rem;
+  }
+
   .project-1-image {
     margin-left: 4rem;
     margin-top: -34.5rem;
@@ -414,17 +470,17 @@ a {
   }
 
   .project-1-text {
-    margin-top: -26rem;
+    margin-top: -25.5rem;
     font-size: 1rem;
   }
 
   .project-2-image {
     margin-left: 4rem;
-    margin-top: -10.5rem;
+    margin-top: -10rem;
   }
 
   .medi-flash-header {
-    margin-left: 4rem;
+    margin-left: 2.5rem;
     margin-top: 22rem;
   }
 
