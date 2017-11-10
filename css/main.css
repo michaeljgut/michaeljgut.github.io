@@ -76,7 +76,9 @@ a {
   /* position relative is needed to keep my image centered on smaller screens */
   position: relative;
   top: 3.75rem;
-  content: url("../images/Profile_pic_large.jpg");
+  height: 9rem;
+  width: 9rem;
+  background: url("../images/Profile_pic_large.jpg") center center no-repeat;
 }
 
 .nav {
@@ -337,7 +339,10 @@ a {
 
   .my-picture {
     margin-top: -2rem;
-    content: url("../images/Profile_pic_small.jpg");
+    height: 5rem;
+    width: 5rem;
+    border: .4rem solid lightblue;
+    background: url("../images/Profile_pic_small.jpg") center center no-repeat;
   }
 
   .home-p1 {
