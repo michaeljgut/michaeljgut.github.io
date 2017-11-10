@@ -146,18 +146,18 @@ a {
 }
 
 .project-1-header {
-  margin-top: 16rem;
+  margin-top: -7%;
   margin-left: -44rem;
 }
 
 .project-2-header {
-  margin-top: -3.5rem;
-  margin-left: 34rem;
+  margin-top: -4%;
+  margin-left: 45%;
 }
 
 .project-1-p {
   margin-left: -57%;
-  margin-top: -26%;
+  margin-top: 28%;
 }
 
 .project-2-p {
@@ -181,6 +181,14 @@ a {
   border-radius: 2.5rem;
 }
 
+.applications-github-image1 {
+  margin-top: .5%;
+}
+
+.applications-github-image2 {
+  margin-top: -83%;
+}
+
 .nytimes-app {
   width: 28%;
 }
@@ -194,12 +202,13 @@ a {
 }
 
 .project-text {
-  margin-top: 20rem;
+  margin-top: -8%;
   text-align: justify;
+  float: left;
 }
 
 .project-1-text {
-  margin-top: 12rem;
+  margin-top: 180%;
 }
 
 .project-1-text,
@@ -210,12 +219,12 @@ a {
 
 
 .project-1-image {
-  margin-top: 1rem;
+  margin-top: -17.5%;
   margin-left: 7rem;
 }
 
 .project-2-image {
-  margin-top: -1.6rem;
+  margin-top: -29%;
   margin-left: 43rem;
 }
 
@@ -310,15 +319,15 @@ a {
   }
 
   .medi-flash-header {
-    margin-top: -2rem;
-    margin-left: -11.5rem;
+    margin-top: -24%;
+    margin-left: 18%;
     text-align: left;
     font-size: .8rem;
     float: left;
   }
 
   .project-text {
-    margin-top: 38rem;
+    margin-top: 8%;
   }
 
   .project-1-text {
@@ -342,8 +351,8 @@ a {
   }
 
   .applications-github-image2 {
-    margin-top: -2.5rem;
-    margin-left: 3.7rem;
+    margin-top: -25.5%;
+    margin-left: 83.7%;
     float: left;
   }
 
@@ -458,41 +467,41 @@ a {
 
   .project-1-image {
     margin-left: 4rem;
-    margin-top: -36.5rem;
+    margin-top: -10.5%;
   }
 
   .nytimes-header {
-    margin-top: -3.5rem;
+    margin-top: -42.5%;
   }
 
   .applications-github-image1 {
-    margin-top: -4rem;
+    margin-top: -43%;
     display: inline;
   }
 
   .project-1-text {
-    margin-top: -30.5rem;
+    margin-top: -140.5%;
     font-size: 1rem;
   }
 
   .project-2-image {
     margin-left: 4rem;
-    margin-top: -13rem;
+    margin-top: 63%;
   }
 
   .medi-flash-header {
-    margin-left: -31.5rem;
-    margin-top: 24.5rem;
+    margin-left: -60%;
+    margin-top: -4%;
   }
 
   .applications-github-image2 {
-    margin-top: 24rem;
-    margin-left: -17rem;
+    margin-top: -10%;
+    margin-left: 4%;
     display: inline;
   }
 
   .project-2-text {
-    margin-top: -4.5rem;
+    margin-top: -19.5%;
     font-size: 1rem;
   }
 
