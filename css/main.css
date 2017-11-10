@@ -2,7 +2,6 @@ body {
   text-align: center;
   font-family: helvetica, sans-serif;
   color: white;
-  overflow: hidden;
 }
 
 h1,
@@ -32,7 +31,7 @@ a {
   color: white;
 }
 
-#home-page {
+.home-page {
   /* I got the following from this web site:
      https://stackoverflow.com/questions/23208200/how-to-darken-a-background-using-css
   */
@@ -60,7 +59,7 @@ a {
   margin-top: -1.5rem;
 }
 
-.applications-h1 {
+.page-h1 {
   margin-top: -4.5rem;
 }
 
@@ -86,10 +85,9 @@ a {
   text-align: left;
 }
 
-#about-page {
+.about-page {
   background: rgba(55,55,150,1);
   color: white;
-  height: 100vh;
   margin: 1rem 0;
   padding: 0 1rem;
 }
@@ -126,12 +124,12 @@ a {
   text-decoration: none;
 }
 
-#applications-page {
+.applications-page {
   background: rgba(55,55,150,1);
   color: white;
-  height: 100vh;
   padding: 0 1rem;
   margin-bottom: 1rem;
+  height: 100vh;
 }
 
 .nytimes-header,
@@ -193,7 +191,7 @@ a {
   margin-left: 43rem;
 }
 
-#contact-page {
+.contact-page {
   background:
     /* top, transparent black, to darken the image */
     linear-gradient(
@@ -243,6 +241,10 @@ a {
 
   .icons {
     margin-top: -1.5rem;
+  }
+
+  .applications-page {
+    height: 100vh;
   }
 
   .nytimes-app,
@@ -352,10 +354,6 @@ a {
     margin-top: -1rem;
   }
 
-  #about-page {
-    height: 41.5rem;
-  }
-
   .about-h2 {
     margin-top: .5rem;
     font-size: 2rem;
@@ -387,11 +385,11 @@ a {
     border-radius: 1.5rem;
   }
 
-  #applications-page {
-    height: 53.5rem;
+  .applications-page {
+    height: 53rem;
   }
 
-  .applications-h1 {
+  .page-h1 {
     margin-top: -3rem;
     font-size: 2rem;
   }
