@@ -94,6 +94,7 @@ a {
   color: white;
   margin: 1rem 0;
   padding: 0 1rem;
+  height: 100vh;
 }
 
 .about-text1,
@@ -516,6 +517,10 @@ a {
   .contact-h2 {
     font-size: 2rem;
     margin-top: 2rem;
+  }
+
+  .about-page {
+    height: 125vh;
   }
 
 }
