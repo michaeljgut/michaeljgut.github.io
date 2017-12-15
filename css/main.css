@@ -364,7 +364,7 @@ a {
 
 }
 
-/* This is for smartphones */
+/* This is for wider smartphones */
 @media (max-width: 35rem) {
   nav {
     margin: 0;
@@ -526,6 +526,20 @@ a {
 
   .about-page {
     overflow: auto;
+  }
+
+}
+
+/* This is for narrower smartphones */
+@media (max-width: 20rem) {
+
+  .home-page {
+    height: 150%;
+  }
+
+  .about-page,
+  .applications-page {
+    height: 200%;
   }
 
 }
