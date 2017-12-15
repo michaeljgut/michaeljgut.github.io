@@ -448,7 +448,8 @@ a {
   }
 
   .applications-page {
-    height: 56rem;
+    overflow: auto;
+    height: auto;
   }
 
   .page-h1 {
@@ -520,7 +521,11 @@ a {
   }
 
   .about-page {
-    height: 125vh;
+    overflow: auto;
+  }
+
+  nav {
+    margin: 0;
   }
 
 }
